@@ -1,0 +1,20 @@
+Informations sur le jeu de données :
+Nom : Cette colonne représente le nom du patient associé au dossier médical. object
+Âge : L’âge du patient au moment de l’admission, exprimé en années. Int
+Sexe : Indique le sexe du patient, soit « Homme » soit « Femme ». Object
+Groupe sanguin : Le groupe sanguin du patient, qui peut être l’un des groupes sanguins courants (par exemple, « A+ », « O- », etc.). object
+État de santé : Cette colonne précise l’état de santé principal ou le diagnostic associé au patient, comme « Diabète », « Hypertension », « Asthme », etc. Object
+Date d’admission : La date à laquelle le patient a été admis dans l’établissement de santé. Date (datetime64)
+Médecin : Le nom du médecin responsable des soins du patient pendant son hospitalisation. (Object)
+Hôpital : Identifie l’établissement de santé ou l’hôpital où le patient a été admis. (Object)
+Assureur : Cette colonne indique la compagnie d’assurance du patient, parmi plusieurs options telles que « Aetna », « Blue Cross », « Cigna », « UnitedHealthcare » ou « Medicare ». (Object)
+Montant facturé : Le montant facturé pour les services de santé reçus par le patient pendant son séjour. (Float)
+Numéro de chambre : Le numéro de la chambre où le patient a séjourné durant son hospitalisation. (Int ou object)
+Type d’admission : Précise le type d’admission reflétant les circonstances de l’hospitalisation. (Object)
+Date de sortie : La date à laquelle le patient a quitté l’établissement. (Date)
+Médicament : Indique un médicament prescrit ou administré au patient durant son admission.(object)
+Résultats des tests : Décrit les résultats d’un test médical réalisé durant l’admission du patient. (Object)
+
+
+Billy amount, faire disparaîtreles euros
+Numéro de chambre Room Number peut passer en object (à voir)
