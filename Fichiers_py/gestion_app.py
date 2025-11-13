@@ -8,8 +8,8 @@
 ###### MODULE de gestion de l'application
 #########################################################################
 #importer les deux modules de gestionnaire de bdd et nettoyage
-import gestion_nettoyage as gn
-import gestion_bdd as gb
+import Fichiers_py.gestion_nettoyage as gn
+import Fichiers_py.gestion_bdd as gb
 
 from openpyxl import Workbook, load_workbook
 from openpyxl.chart import PieChart, BarChart, Reference

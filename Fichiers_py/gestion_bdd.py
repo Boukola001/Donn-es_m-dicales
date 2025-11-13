@@ -4,10 +4,10 @@
 #########################################################################
 #########################################################################
 ###### MODULE de gestion de bdd: créer/fermer connexion,
-###### Créer la bdd et tables, insérer les données, explorer les données
+###### Créer la bdd et les tables, insérer les données, explorer les données
 #########################################################################
 import mysql.connector as mysqlcon
-import gestion_nettoyage as gn
+import Fichiers_py.gestion_nettoyage as gn
 
 def creer_connexion(nom_host, nom_user, mdp_user, nom_bdd=""):
     """
@@ -27,10 +27,8 @@ def creer_connexion(nom_host, nom_user, mdp_user, nom_bdd=""):
                               de connexion réseau ou des pbs liés à la BDD.
 
     """
-    #à compléter
     connexion = None
     try:
-        # à completer
         connexion = mysqlcon.connect(
             host=nom_host,
             user=nom_user,
@@ -473,10 +471,8 @@ def inserer_donnees(connexion, df) :
         
             
 
-# Si besoin ajouter autres fonctions pour vous aider lors de l'insertion
-
 #########################################################
-####### Fonctions d'exploration de la bdd à compléter
+####### Fonctions d'exploration de la bdd
 #########################################################
 def get_nbre_patients_par(connexion, condition):
     """
@@ -712,12 +708,12 @@ def fct_principale(nom_bdd):
         liste_tables = ["Docteurs", "Hopitaux", "Doct_Hosp", "Chambres", "Medicaments", "Patients",
                         "Condits", "Assurances", "Assu_Pat", "Tests", "Hospitalisations"]
         #print("Connexion réussie à la bdd")
-        #à compléter: créer la base de données
-        #à compléter: vérifier si la base de données existe avant de la créer
+        #créer la base de données
+        #vérifier si la base de données existe avant de la créer
         if bdd_existe(connexion, nom_bdd) == False : 
             creer_bdd(connexion, nom_bdd)
             
-        #à compléter: selectionner la base de données
+        #àselectionner la base de données
         selectionner_bdd(connexion, nom_bdd)
         
         #Véréfier si la bdd existe déjà
@@ -743,5 +739,5 @@ def fct_principale(nom_bdd):
 
 if __name__ == "__main__":
     nom_bdd = "bdd_soins_sante"
-    #tester vos fonctions
+    #test des fonctions
     fct_principale(nom_bdd)

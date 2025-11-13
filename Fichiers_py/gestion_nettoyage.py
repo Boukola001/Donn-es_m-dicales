@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 
 
-### Fonctions utilitaires à écrire si besoin
+### Fonctions utilitaires
 
 def cor_type(df_sante) : 
     """
@@ -342,4 +342,3 @@ if __name__ == "__main__":
     print(df.columns)
     print(len(df))
     print(df["Medical Condition"].unique().tolist())
-    #pour tester vos fonctions
